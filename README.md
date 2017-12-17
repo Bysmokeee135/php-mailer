@@ -24,10 +24,6 @@ Formatting email correctly is surprisingly difficult. There are myriad overlappi
 
 The PHP `mail()` function usually sends via a local mail server, typically fronted by a `sendmail` binary on Linux, BSD and OS X platforms, however, Windows usually doesn't include a local mail server; PHPMailer's integrated SMTP implementation allows email sending on Windows platforms without a local mail server.
 
-## License
-
-This software is distributed under the [LGPL 2.1](http://www.gnu.org/licenses/lgpl-2.1.html) license. Please read LICENSE for information on the
-software availability and distribution.
 
 ## Installation & loading
 
@@ -122,56 +118,3 @@ Complete generated API documentation is [available online](http://phpmailer.gith
 
 You'll find some basic user-level docs in the [docs](docs/) folder, and you can generate complete API-level documentation using the [generatedocs.sh](https://github.com/PHPMailer/PHPMailer/tree/master/docs/generatedocs.sh) shell script in the docs folder, though you'll need to install [PHPDocumentor](http://www.phpdoc.org) first. You may find [the unit tests](https://github.com/PHPMailer/PHPMailer/tree/master/test/phpmailerTest.php) a good source of how to do various operations such as encryption.
 
-If the documentation doesn't cover what you need, search the [many questions on Stack Overflow](http://stackoverflow.com/questions/tagged/phpmailer), and before you ask a question about "SMTP Error: Could not connect to SMTP host.", [read the troubleshooting guide](https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting).
-
-## Tests
-
-There is a PHPUnit test script in the [test](https://github.com/PHPMailer/PHPMailer/tree/master/test/) folder.
-
-Build status: [![Build Status](https://travis-ci.org/PHPMailer/PHPMailer.svg)](https://travis-ci.org/PHPMailer/PHPMailer)
-
-If this isn't passing, is there something you can do to help?
-
-## Contributing
-
-Please submit bug reports, suggestions and pull requests to the [GitHub issue tracker](https://github.com/PHPMailer/PHPMailer/issues).
-
-We're particularly interested in fixing edge-cases, expanding test coverage and updating translations.
-
-With the move to the PHPMailer GitHub organisation, you'll need to update any remote URLs referencing the old GitHub location with a command like this from within your clone:
-
-```sh
-git remote set-url upstream https://github.com/PHPMailer/PHPMailer.git
-```
-
-Please *don't* use the SourceForge or Google Code projects any more.
-
-## Sponsorship
-
-Development time and resources for PHPMailer are provided by [Smartmessages.net](https://info.smartmessages.net/), a powerful email marketing system.
-
-<a href="https://info.smartmessages.net/"><img src="https://www.smartmessages.net/img/smartmessages-logo.svg" width="250" height="28" alt="Smartmessages email marketing"></a>
-
-Other contributions are gladly received, whether in beer 🍺, T-shirts 👕, Amazon wishlist raids, or cold, hard cash 💰.
-
-## Changelog
-
-See [changelog](changelog.md).
-
-## History
-- PHPMailer was originally written in 2001 by Brent R. Matzelle as a [SourceForge project](http://sourceforge.net/projects/phpmailer/).
-- Marcus Bointon (coolbru on SF) and Andy Prevost (codeworxtech) took over the project in 2004.
-- Became an Apache incubator project on Google Code in 2010, managed by Jim Jagielski.
-- Marcus created his fork on [GitHub](https://github.com/Synchro/PHPMailer).
-- Jim and Marcus decide to join forces and use GitHub as the canonical and official repo for PHPMailer.
-- PHPMailer moves to the [PHPMailer organisation](https://github.com/PHPMailer) on GitHub.
-
-### What's changed since moving from SourceForge?
-- Official successor to the SourceForge and Google Code projects.
-- Test suite.
-- Continuous integration with Travis-CI.
-- Composer support.
-- Public development.
-- Additional languages and language strings.
-- CRAM-MD5 authentication support.
-- Preserves full repo history of authors, commits and branches from the original SourceForge project.
